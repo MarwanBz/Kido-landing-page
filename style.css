@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: SF Pro Display,
+    sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+  padding: 0 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.logo img {
+  width: 40px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+nav ul li:not(.first) {
+  padding-left: 30px;
+}
+
+nav ul li a {
+  color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.login a {
+  color: #5B51DE;
+}
+
+/* start of landing */
+.landing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 110% !important;
+  padding: 20px 0;
+  column-gap: 80px;
+}
+
+.landing .landing-left .svg {
+  background-image: url(./assets/illustrations.svg);
+  height: 590px;
+  width: 590px;
+  background-size: cover;
+}
+
+
+.landing .landing-right h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 80px;
+  font-family: SF Pro Display,
+    sans-serif;
+}
+
+.landing .landing-right p {
+  text-align: left;
+  width: 80%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #73737B;
+  padding: 40px 0;
+}
+
+.landing .landing-right .cta {
+  height: 55px;
+}
+
+.landing .landing-right .cta input {
+  padding: 17px 40px;
+  width: 250px;
+  border: 1px solid #A6A6AB;
+  border-radius: 7px;
+  position: relative;
+  background-image: url(./assets/icon.svg);
+  background-repeat: no-repeat;
+  background-position: 13px center;
+  font-weight: 400;
+  font-size: 16px;
+
+}
+
+.landing .landing-right .cta .btn {
+  font-weight: 400;
+  font-size: 16px;
+  padding: 17px 20px;
+  width: 141px;
+  height: 100%;
+  background: #5B51DE;
+  border-radius: 7px;
+  color: #FFF;
+}
+
+
+/* ?media queries */
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* end of small */
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
